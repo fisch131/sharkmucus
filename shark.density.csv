@@ -1,0 +1,49 @@
+﻿Region,ID,Condition,Exposed.Density
+Dorsal Fin Center,1,Alive,24.25
+Dorsal Fin Center,2,Alive,18
+Dorsal Fin Center,3,Alive,29.25
+Dorsal Fin Center,1,Dead,36.75
+Dorsal Fin Center,2,Dead,16.75
+Dorsal Fin Center,3,Dead,32.5
+Dorsal Fin Tip,1,Alive,20.25
+Dorsal Fin Tip,2,Alive,42
+Dorsal Fin Tip,3,Alive,13.25
+Dorsal Fin Tip,1,Dead,49.25
+Dorsal Fin Tip,2,Dead,48.5
+Dorsal Fin Tip,3,Dead,52.25
+Head,1,Alive,18.5
+Head,2,Alive,13.25
+Head,3,Alive,18.5
+Head,1,Dead,17.75
+Head,2,Dead,11.75
+Head,3,Dead,16.25
+Mid. Body,1,Alive,14.75
+Mid. Body,2,Alive,11
+Mid. Body,3,Alive,14
+Mid. Body,1,Dead,18
+Mid. Body,2,Dead,15.25
+Mid. Body,3,Dead,15.5
+Nose Tip,1,Alive,4.5
+Nose Tip,2,Alive,3.5
+Nose Tip,3,Alive,4.5
+Nose Tip,1,Dead,4.25
+Nose Tip,2,Dead,3.5
+Nose Tip,3,Dead,4.25
+Post. Body,1,Alive,12
+Post. Body,2,Alive,11.75
+Post. Body,3,Alive,13.75
+Post. Body,1,Dead,16.5
+Post. Body,2,Dead,14
+Post. Body,3,Dead,15.25
+Tail Center,1,Alive,31
+Tail Center,2,Alive,32
+Tail Center,3,Alive,38.25
+Tail Center,1,Dead,31
+Tail Center,2,Dead,29.5
+Tail Center,3,Dead,43
+Tail Trail. Edge,1,Alive,15.25
+Tail Trail. Edge,2,Alive,19.5
+Tail Trail. Edge,3,Alive,14.75
+Tail Trail. Edge,1,Dead,61.5
+Tail Trail. Edge,2,Dead,47.75
+Tail Trail. Edge,3,Dead,58.75

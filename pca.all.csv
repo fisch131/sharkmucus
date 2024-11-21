@@ -1,0 +1,49 @@
+﻿Sample,Region,Condition,Region.Condition,Sq,Ssk,Sku,Sdr,Exposed.Area,Exposed.Density
+1_Alive_nose,Nose,Alive,Nose_Alive,17.25666667,-0.335666667,3.128,4.69,0.157,4.5
+2_Alive_nose,Nose,Alive,Nose_Alive,17.09666667,-0.722566667,3.958333333,4.749333333,0.1682,3.5
+3_Alive_nose,Nose,Alive,Nose_Alive,21.14666667,-0.428533333,3.047333333,5.826666667,0.136,4.5
+1_Dead_nose,Nose,Dead,Nose_Dead,17.30333333,-0.283236667,2.898666667,4.883666667,0.1614,4.25
+2_Dead_nose,Nose,Dead,Nose_Dead,14.18333333,-0.438466667,3.110666667,3.957666667,0.1688,3.5
+3_Dead_nose,Nose,Dead,Nose_Dead,11.68733333,0.174996667,2.564,2.273333333,0.1174,4.25
+1_Alive_dfinlat,Dorsal Fin Center,Alive,Dfinlat_Alive,5.846,-0.033056667,2.614666667,1.69,0.0274,24.25
+2_Alive_dfinlat,Dorsal Fin Center,Alive,Dfinlat_Alive,8.334,-0.491533333,2.737333333,2.848,0.0398,18.5
+3_Alive_dfinlat,Dorsal Fin Center,Alive,Dfinlat_Alive,7.401666667,-0.113133333,2.541333333,2.544,0.0284,29.25
+1_Dead_dfinlat,Dorsal Fin Center,Dead,Dfinlat_Dead,6.119,0.221966667,2.826,2.508666667,0.0276,36.75
+2_Dead_dfinlat,Dorsal Fin Center,Dead,Dfinlat_Dead,8.704666667,-0.34262,2.913333333,4.875,0.035,25.25
+3_Dead_dfinlat,Dorsal Fin Center,Dead,Dfinlat_Dead,6.009666667,0.1809,3.064,2.469,0.025,32.5
+1_Alive_dfintip,Dorsal Fin Tip,Alive,Dfintip_Alive,1.021733333,1.431666667,7.048333333,0.08534,0.007,20.25
+2_Alive_dfintip,Dorsal Fin Tip,Alive,Dfintip_Alive,1.839333333,0.954866667,5.009666667,0.218933333,0.006,16.5
+3_Alive_dfintip,Dorsal Fin Tip,Alive,Dfintip_Alive,0.5612,1.1905,6.692666667,0.02367,0.0044,13.25
+1_Dead_dfintip,Dorsal Fin Tip,Dead,Dfintip_Dead,5.069,0.27475,3.261,2.198666667,0.0158,49.25
+2_Dead_dfintip,Dorsal Fin Tip,Dead,Dfintip_Dead,5.741666667,-0.4721,3.582666667,2.640666667,0.0252,48.5
+3_Dead_dfintip,Dorsal Fin Tip,Dead,Dfintip_Dead,4.159666667,-0.028333333,3.774333333,1.384,0.0194,52.25
+1_Alive_head,Head,Alive,Head_Alive,10.242,0.0865,2.349333333,4.293333333,0.0326,18.5
+2_Alive_head,Head,Alive,Head_Alive,12.96333333,0.19047,2.379,6.325333333,0.0304,13.25
+3_Alive_head,Head,Alive,Head_Alive,8.266666667,0.0534,2.387,3.007333333,0.0364,18.5
+1_Dead_head,Head,Dead,Head_Dead,12.50333333,-0.362366667,2.777,7.769666667,0.028,17.75
+2_Dead_head,Head,Dead,Head_Dead,14.61,-0.154313333,2.253666667,6.601333333,0.0488,11.75
+3_Dead_head,Head,Dead,Head_Dead,8.504333333,-0.029023333,2.488666667,3.899,0.034,16.25
+1_Alive_lat,Mid. Body,Alive,Lat_Alive,9.402666667,-0.5471,3.214666667,3.992,0.0422,14.75
+2_Alive_lat,Mid. Body,Alive,Lat_Alive,11.01,-0.090733333,2.077666667,4.110333333,0.0434,11
+3_Alive_lat,Mid. Body,Alive,Lat_Alive,10.39866667,-0.2667,2.433,4.456666667,0.0466,14
+1_Dead_lat,Mid. Body,Dead,Lat_Dead,9.487666667,-0.268366667,2.853,5.388,0.0386,18
+2_Dead_lat,Mid. Body,Dead,Lat_Dead,8.810666667,-0.264866667,2.613333333,5.092333333,0.0508,15.25
+3_Dead_lat,Mid. Body,Dead,Lat_Dead,11.317,-0.476733333,2.885333333,5.201333333,0.0476,15.5
+1_Alive_post,Post. Body,Alive,Post_Alive,12.85666667,-0.261033333,2.479333333,5.951333333,0.0524,12
+2_Alive_post,Post. Body,Alive,Post_Alive,11.458,-0.5698,2.998,3.427,0.0538,11.75
+3_Alive_post,Post. Body,Alive,Post_Alive,10.0544413,-0.204357878,2.31225954,3.961594685,0.0464,13.75
+1_Dead_post,Post. Body,Dead,Post_Dead,10.68866667,-0.273866667,2.608666667,4.680333333,0.0476,16.5
+2_Dead_post,Post. Body,Dead,Post_Dead,14.07333333,-0.00956,2.234666667,6.792666667,0.049,14
+3_Dead_post,Post. Body,Dead,Post_Dead,11.51333333,-0.247133333,2.415,6.139666667,0.0554,15.25
+1_Alive_taillat,Tail Center,Alive,Taillat_Alive,3.525333333,-0.005333333,2.955333333,0.6718,0.0246,31
+2_Alive_taillat,Tail Center,Alive,Taillat_Alive,4.934333333,-0.159377,2.863,1.349,0.0288,32
+3_Alive_taillat,Tail Center,Alive,Taillat_Alive,3.254666667,0.285,2.766333333,0.629133333,0.021,38.25
+1_Dead_taillat,Tail Center,Dead,Taillat_Dead,4.645,-0.238943333,3.084333333,1.863333333,0.027,31
+2_Dead_taillat,Tail Center,Dead,Taillat_Dead,3.739,0.5396,3.406666667,0.9426,0.0234,29.5
+3_Dead_taillat,Tail Center,Dead,Taillat_Dead,4.668333333,0.2225,2.785,1.671,0.0184,43
+1_Alive_tailte,Tail Trailing Edge,Alive,Tailte_Alive,1.049366667,1.2244,7.933,0.0618,0.0076,15.25
+2_Alive_tailte,Tail Trailing Edge,Alive,Tailte_Alive,2.490333333,1.381333333,8.007333333,0.294033333,0.021,19.5
+3_Alive_tailte,Tail Trailing Edge,Alive,Tailte_Alive,1.0734,1.051966667,6.961666667,0.072426667,0.008,14.75
+1_Dead_tailte,Tail Trailing Edge,Dead,Tailte_Dead,2.670666667,0.00235,3.4,0.624466667,0.0096,61.5
+2_Dead_tailte,Tail Trailing Edge,Dead,Tailte_Dead,2.970666667,-0.139853333,3.275666667,0.716266667,0.0162,47.75
+3_Dead_tailte,Tail Trailing Edge,Dead,Tailte_Dead,2.892666667,-0.2172,3.360666667,0.859233333,0.0174,58.75
