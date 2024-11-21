@@ -1,6 +1,9 @@
-#all shark stuff
-#put in working directory and packages here
-#uploading as a github repository?
+#code for figures and statistical tests for shark mucus paper
+
+#packages:
+library(lme4)
+library(tidyverse)
+library(ggbiplot)
 
 area<-read.csv('shark.area.7.17.csv',fileEncoding='latin1',check.names=F)
 area$ID <- as.character(area$ID)
@@ -22,8 +25,9 @@ mm$ID <- as.character(mm$ID)
 str(mm)
 colnames(mm)[1] <- "Region"
 
-library (lme4)
+
 #roughness t-tests
+library (lme4)
 mod.region <-lmer(Sq ~ Region + (1|ID), data=mm)
 summary(mod.region)
 lsmeans(mod.region, pairwise~Region, adjust="tukey")
@@ -250,12 +254,19 @@ sdrplot2 <- ggplot(mm, aes(x=Region_Condition, y=Sdr, fill=Condition)) +
   geom_jitter(size = 2.1, color = "black", alpha = 1, position = position_jitterdodge(jitter.width = 0.2, dodge.width = 0.75))  +  scale_fill_manual(values=c("steelblue1", "steelblue4")) + labs(y="Sdr (%)",x="Body Region") +theme(axis.text =element_text (size = 20, face = "bold")) +theme(axis.title = element_text (size = 26, face = "bold")) + theme(legend.text =element_text (size = 18, face = "bold")) +theme(legend.title = element_text (size = 20, face = "bold")) + geom_vline(xintercept=c(2.5, 4.5, 6.5, 8.5, 10.5, 12.5, 14.5), linetype="solid", color="black", linewidth=0.5, alpha=1) + scale_x_discrete(labels = function(labels) str_wrap(labels2, width = 1) + theme(axis.text.x = element_text(color = "black"), axis.text.y = element_text(color = "black")))
 sdrplot3 <-sdrplot2 + scale_x_discrete(labels = function(labels) str_wrap(labels2, width = 1))+ theme(axis.text.x = element_text(color = "black"), axis.text.y = element_text(color = "black"))
 plot(sdrplot3)
-
 #area boxplot
-#still need code for these- need to find with correct area spreadsheet (one with correct post values)
-
+areaplot2 <- ggplot(area, aes(x=Region_Condition, y=Exposed.Area, fill=Condition)) + 
+  geom_boxplot(lwd= 1.2, color = "black", alpha = 1, position = position_dodge(1), fatten = 0.8, coef=NULL)+ theme_classic() + theme(legend.position = "top")+ 
+  geom_jitter(size = 2.1, color = "black", alpha = 1, position = position_jitterdodge(jitter.width = 0.2, dodge.width = 0.75))  +  scale_fill_manual(values=c("steelblue1", "steelblue4")) + labs(y="Exposed Area (mm2)",x="Body Region") +theme(axis.text =element_text (size = 20, face = "bold")) +theme(axis.title = element_text (size = 26, face = "bold")) + theme(legend.text =element_text (size = 18, face = "bold")) +theme(legend.title = element_text (size = 20, face = "bold")) + geom_vline(xintercept=c(2.5, 4.5, 6.5, 8.5, 10.5, 12.5, 14.5), linetype="solid", color="black", linewidth=0.5, alpha=1) + scale_x_discrete(labels = function(labels) str_wrap(labels2, width = 1) + theme(axis.text.x = element_text(color = "black"), axis.text.y = element_text(color = "black")))
+areaplot3 <-areaplot2 + scale_x_discrete(labels = function(labels) str_wrap(labels2, width = 1))+ theme(axis.text.x = element_text(color = "black"), axis.text.y = element_text(color = "black"))
+plot(areaplot3)
 #density boxplot
-#still need code for these- need to fix order of this
+density$Region_Condition <- factor(density$Region_Condition, levels = c('Nose Tip_Alive', 'Nose Tip_Dead', 'Head_Alive', 'Head_Dead', 'Dorsal Fin Center_Alive', 'Dorsal Fin Center_Dead', 'Dorsal Fin Tip_Alive', 'Dorsal Fin Tip_Dead', 'Mid. Body_Alive', 'Mid. Body_Dead', 'Post. Body_Alive', 'Post. Body_Dead', 'Tail Center_Alive', 'Tail Center_Dead', 'Tail Trail. Edge_Alive', 'Tail Trail. Edge_Dead'))
+densityplot2 <- ggplot(density, aes(x=Region_Condition, y=Exposed.Density, fill=Condition)) + 
+  geom_boxplot(lwd= 1.2, color = "black", alpha = 1, position = position_dodge(1), fatten = 0.8, coef=NULL)+ theme_classic() + theme(legend.position = "top")+ 
+  geom_jitter(size = 2.1, color = "black", alpha = 1, position = position_jitterdodge(jitter.width = 0.2, dodge.width = 0.75))  +  scale_fill_manual(values=c("steelblue1", "steelblue4")) + labs(y="Exposed Density (# of denticles/mm2)",x="Body Region") +theme(axis.text =element_text (size = 20, face = "bold")) +theme(axis.title = element_text (size = 26, face = "bold")) + theme(legend.text =element_text (size = 18, face = "bold")) +theme(legend.title = element_text (size = 20, face = "bold")) + geom_vline(xintercept=c(2.5, 4.5, 6.5, 8.5, 10.5, 12.5, 14.5), linetype="solid", color="black", linewidth=0.5, alpha=1) + scale_x_discrete(labels = function(labels) str_wrap(labels2, width = 1) + theme(axis.text.x = element_text(color = "black"), axis.text.y = element_text(color = "black")))
+densityplot3 <-densityplot2 + scale_x_discrete(labels = function(labels) str_wrap(labels2, width = 1))+ theme(axis.text.x = element_text(color = "black"), axis.text.y = element_text(color = "black"))
+plot(densityplot3)
 
 #pca plot and code
 library(ggbiplot)
