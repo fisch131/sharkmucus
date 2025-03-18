@@ -285,4 +285,19 @@ g <- ggbiplot(shark.pca.all, obs.scale = 1, var.scale = 1, varname.size = 6, var
                          legend.position.inside = c(0,3), legend.background = element_rect(fill = "white", color = "black"), legend.text= element_text (size = 12), legend.title =element_text (size = 12)) +
   labs(color ="Region", shape = "Condition") 
 print(g)
-
+print(shark.pca.all) #gives loadings for each variable
+summary(shark.pca.all) #gives importance of components
+                                               
+#pca correlation code
+cor(pca_all[, 5:10]) #correlation for variables                                                
+install.packages("ggcorrplot")
+library(ggcorrplot) #plot correlation
+ggcorrplot(cor(pca_all[, 5:10]))
+#corrmatrix visualization
+install.packages("Hmisc")
+library(Hmisc)
+#create matrix of correlation coefficients and p-values
+rcorr(as.matrix(pca_all[, 5:10])) #gives p-values
+plot(pca_all[, 5:10]) #scatterplot matrix
+                                            
+                                               
